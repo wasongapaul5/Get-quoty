@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/08/17/44/dog-4393516__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#nature {
+  background-size: cover;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+}
+
+.quote{
+  font-weight: bolder;
+  font-size: 20px;
+}
