@@ -1,0 +1,33 @@
+.card-body {
+  background-color:#e0d5d59e;
+    border: 1px solid;
+    padding: 70px;
+    box-shadow: 2px 4px;
+    font-size: 25px;
+    font-family: pacifico,cursive;
+    padding:20px;
+}
+
+h1{
+    font-size: 100px;
+    font-family: 'Spicy Rice', cursive;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    text-shadow:0 10px white;
+}
+
+.jumbotron{
+    border-radius: 30px;
+    background-color:lightgray;
+}
+
+.card{
+    width:50%;
+    height: 60%;
+    margin-bottom: 20px;
+    position: relative;
+    flex-direction: column;
+     background-clip: border-box;
+    box-shadow:0 2px 5px rgba(0,0,0,0.16)
+}
