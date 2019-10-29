@@ -13,3 +13,4 @@ export class VotesComponent implements OnInit {
   }
 
 }
+

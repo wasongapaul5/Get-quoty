@@ -5,14 +5,11 @@
 </p>
 <p>This quote will be completed in {{quote.completeDate|dateCount}} days</p>
 <div class="thumbs">
-        <i class="fa fa-thumbs-up btn btn-success" aria-hidden="true" (click)="likeButtonClick(i)"></i>
-        <i class="fa fa-thumbs-down  btn  btn-danger"  aria-hidden="true" (click)="dislikeButtonClick(i)"></i>
+        <i class="fa fa-thumbs-up btn btn-success" aria-hidden="true" (click)="likeButtonClick()"></i>
+        <i class="fa fa-thumbs-down btn  btn-danger"  aria-hidden="true" (click)="dislikeButtonClick()"></i>
     <br>
 <button (click)= 'quoteComplete(true)' class="btn btn-outline-danger">Delete</button>
 <br>
 <br>
-
-
-<!-- <p><strong>Likes:</strong>{{quote.numberOfLikes}} <span><strong>Dislikes:</strong>{{quote.numberOfDislikes}}</span></p> -->
 </div>
 </div>

@@ -1,7 +1,6 @@
 <link href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container">
-
   <div class="jumbotron">
     <h1>GET QUOTY....</h1>
   </div>
@@ -11,23 +10,17 @@
         <div>
           <hr>
           <br>
-          <!-- <button>{{Quote.upvotes}}<i class= "fa fa-thumbs-up" id="upvotes" (click)="upvotesQuote(Quote)"></i></button>
-          <button>{{Quote.downvotes}}<i class= "fa fa-thumbs-down" id="downvotes" (click)="downvotesQuote(Quote)"></i></button> -->
           <h6 class="card-body">{{quote.name}} , uploaded by {{quote.uploader}}, due on {{quote.completeDate|date|lowercase}}
           </h6>
-          
-          <button (click)='toggleDetails(i)' class="btn btn-success">Explore</button>
-         
-        </div>
-
-
-        <div *ngIf='quote.showDescription'>
+           <button (click)='toggleDetails(i)' class="btn btn-success">Explore</button>
+          </div>
+           <div *ngIf='quote.showDescription'>
           <app-quote-detail [quote]='quote' (isComplete)='completeQuote($event,i)'></app-quote-detail>
         </div>
       </div>
     </div>
     <div class="col-md-6">
-      <app-quote-form (newQuote)="addNewQuote($event)"></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
   </div>
 </div>
